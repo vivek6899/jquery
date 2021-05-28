@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .xyz
+    {
+        color:red;
+        font-size:30px;
+        width: 500px;
+    }
+</style>
+
+<body>   
+    <form>
+      
+       lower: <input type="text" id="txtdata" class="xyz"> <br>
+       upper: <input type="text" id="txtdata2" class="xyz"> <br>
+       Number: <input type="text" id="txtdata3" class="xyz"> <br>
+    
+        
+    <script>
+        $(document).ready(function(){
+            var str = "Please locate where 'locate' occurs!";
+                var pos = str.indexOf("locate");
+                var pos2 = str.indexOf("P");
+                var pos3 = str.indexOf("e");
+                var pos4 = str.indexOf("w");
+                document.writeln(pos+ "<br/>");
+                document.writeln(pos2+ "<br/>");
+                document.writeln(pos3+ "<br/>");
+                document.writeln(pos4+ "<br/>");
+                                      
+        });
+    </script>
+</form>
+</body>
+</html>

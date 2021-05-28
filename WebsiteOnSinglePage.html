@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .red{
+            color:red;
+            font-size:x-large;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-success" id="btnAdd" value="Show">Home</button>
+    <button class="btn btn-success" id="btnAdd1" value="Hide">About us</button>
+    <button class="btn btn-success" id="contactus" value="Hide">Contact us</button>
+    <button class="btn btn-success" id="feedback" value="Hide">Feedback</button>
+    <button class="btn btn-success" id="faq" value="Hide">FAQ</button>
+        
+    <div id="homepage"  hidden="true" class="container">
+
+        <h2>Home</h2>
+        
+        </div>
+
+
+        <div id="aboutpage"  hidden="true" class="container">
+           
+            <h1>Contact us</h1>
+            
+            </div>
+
+        <div id="contactpage"  hidden="true" class="container">
+           
+            <h1>Contact us</h1>
+            
+            </div>  
+
+        <div id="contactpage"  hidden="true" class="container">
+            <h1>Contact us</h1>
+            
+            </div>
+
+        <div id="contactpage"  hidden="true" class="container">
+            <h1>Contact us</h1>
+            
+            </div>            
+    
+        <script>
+                    $(document).ready(function(){
+                        $("#btnAdd").click(function(){
+                            $("#homepage").toggle();                                ;
+                            });
+                        
+                         $("#btnAdd1").click(function(){
+                            $("#aboutpage").toggle();
+                            });
+
+                         $("#contact").click(function(){
+                            $("#contactpage").toggle();
+                         });
+
+                         $("#btnAdd1").click(function(){
+                            $("#contactpage").toggle();
+                         });
+
+                         $("#btnAdd1").click(function(){
+                            $("#contactpage").toggle();
+                         });
+                    });
+                </script>
+</body>
+</html>
+<!--  combo  state city
+
+
+logout pge
+history object
+
+shopping cart-->

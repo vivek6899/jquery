@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form>
+        <input type="text"  id="txt1"/><br/>
+        
+        RED: <input type="radio" class="cal" name="cal" value="red"  id="red"/>
+         ORANGE:<input type="radio" class="cal" name="cal" value="orange"  id="orange"/>
+         BLUE:<input type="radio" class="cal" name="cal"value="blue"  id="blue"/>
+         GREEN:<input type="radio" class="cal" name="cal" value="green"  id="green"/>
+        
+       </div>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(".cal").change(function(){
+            let d=$(this).val();
+           
+            if( d== "red"){
+                $("#txt1").css("background-color","red");
+               
+            }
+            else if(d=="orange"){
+                $("#txt1").css("background-color","orange");
+            }
+            else if(d=="blue"){
+                $("#txt1").css("background-color","blue");
+            }
+            else if(d=="green"){
+                $("#txt1").css("background-color","green");
+            }
+        
+        });
+        });
+    </script>
+</body>
+</html>

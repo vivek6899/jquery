@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p>
+                Country : <span id="data"></span> <br/>
+                
+                NewConfirmed : <span id="dataNewConfirmed"></span> <br/>
+                NewDeaths : <span id="dataNewDeaths"></span> <br/>
+                TotalConfirmed : <span id="dataTotalConfirmed"></span> <br />
+                TotalDeaths : <span id="dataTotalDeaths"></span> <br />
+                TotalRecovered : <span id="dataTotalRecovered"></span> <br />
+           </p>  -->
+    <script>
+        fetch('https://api.covid19api.com/summary').then((apidata) => {
+            console.log(apidata);
+            return apidata.json();
+          }).then((actualdata) => {
+            
+
+            document.writeln("Country:"+actualdata.Countries[76].Country+"<br/>");
+            document.writeln("New Confirmed:"+actualdata.Countries[76].NewConfirmed+"<br/>");
+            document.writeln("New Death:"+actualdata.Countries[76].NewDeaths+"<br/>");
+            document.writeln("Total Confirmed:"+actualdata.Countries[76].TotalConfirmed+"<br/>");
+            document.writeln("TotalDeaths:"+actualdata.Countries[76].TotalDeaths+"<br/>");
+            document.writeln("Total Recovered:"+actualdata.Countries[76].TotalRecovered+"<br/>");
+            // document.getElementById("data").innerHTML ="<b>" + actualdata.Countries[76].Country +"</b>";
+           
+             
+            //  document.getElementById("dataNewConfirmed").innerHTML = "<b>" + actualdata.Countries[76].NewConfirmed + "</b>";
+            
+            //  document.getElementById("dataNewDeaths").innerHTML = "<b>" + actualdata.Countries[76].NewDeaths + "</b>";
+
+            // document.getElementById("dataTotalConfirmed").innerHTML = "<b>" + actualdata.Countries[76].TotalConfirmed + "</b>";
+
+            // document.getElementById("dataTotalDeaths").innerHTML = "<b>" + actualdata.Countries[76].TotalDeaths + "</b>";
+
+            // document.getElementById("dataTotalRecovered").innerHTML ="<b>" + actualdata.Countries[76].TotalRecovered + "</b>";
+
+            }).catch((error) => {
+            console.log(error);
+        });
+    </script>
+
+</body>
+
+</html>

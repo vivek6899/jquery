@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <script>
+        fetch('https://api.covid19api.com/summary').then((apidata) => {
+            console.log(apidata);
+            return apidata.json();
+          }).then((actualdata) => {
+            
+               
+                    document.writeln("Total Cases:"+actualdata.Countries[Array.length].TotalConfirmed);
+               
+
+
+
+
+
+
+
+            // document.writeln("Country:"+actualdata.Countries[76].Country+"<br/>");
+            // document.writeln("New Confirmed:"+actualdata.Countries[76].NewConfirmed+"<br/>");
+            // document.writeln("New Death:"+actualdata.Countries[76].NewDeaths+"<br/>");
+            // document.writeln("Total Confirmed:"+actualdata.Countries[76].TotalConfirmed+"<br/>");
+            // document.writeln("TotalDeaths:"+actualdata.Countries[76].TotalDeaths+"<br/>");
+            // document.writeln("Total Recovered:"+actualdata.Countries[76].TotalRecovered+"<br/>");
+           
+
+            }).catch((error) => {
+            console.log(error);
+        });
+    </script>
+
+</body>
+
+</html>

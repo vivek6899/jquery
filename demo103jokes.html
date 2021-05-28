@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //         fetch('https://official-joke-api.appspot.com/random_joke').then((apidata)=>{
+        //             console.log(apidata);
+        //             return apidata.json();
+        //             }).then((actualdata) =>{
+        //                 console.log(actualdata.Countries);
+        //             }).catch((error) =>{
+        //                 console.log(error);
+        //             });
+
+
+        fetch("https://sv443.net/jokeapi/v2/joke/Programming?type=single")
+            .then((res) => res.json())
+            .then((data) => setJoke(data.joke));
+           
+            </script>
+</body>
+</html>
